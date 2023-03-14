@@ -1,0 +1,26 @@
+.item_card {
+  border: 1px grey solid;
+  border-radius: 6px;
+  height: 350px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+  list-style-type: none;
+}
+
+.item_card:hover {
+  border: 1px #5ed573 solid;
+}
+.item_name {
+  color: rgb(141, 202, 169);
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.item_img {
+  height: 40%;
+  object-fit: cover;
+}
