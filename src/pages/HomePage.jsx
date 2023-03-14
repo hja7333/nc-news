@@ -11,6 +11,7 @@ const Articles = () => {
   <h2>Here is the latest news........</h2>;
   useEffect(() => {
     getArticles("/articles").then((data) => {
+      console.log(data);
       setArticles(data.data.articles);
     });
   }, []);
