@@ -5,6 +5,7 @@
   width: 600px;
   margin-left: 50px;
   padding: 30px;
+  list-style-type: none;
 }
 .title {
   color: rgb(39, 36, 36);

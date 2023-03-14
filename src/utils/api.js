@@ -7,7 +7,6 @@ export const getArticles = (url) => {
   return articlesApi
     .get(url)
     .then((data) => {
-      console.log(data);
       return data;
     })
     .catch((error) => {
