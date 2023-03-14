@@ -1,0 +1,17 @@
+.article_card {
+  border: 5px plum solid;
+  border-radius: 50px;
+  height: 600px;
+  width: 600px;
+  margin-left: 50px;
+  padding: 30px;
+}
+.title {
+  color: rgb(39, 36, 36);
+  margin: 10px;
+  font-size: 2rem;
+}
+.article_img {
+  height: 50%;
+  border: 10px;
+}
