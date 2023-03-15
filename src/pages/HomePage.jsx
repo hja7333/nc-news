@@ -8,7 +8,7 @@ import TopicBar from "../components/TopicBar";
 const Articles = () => {
   const [articles, setArticles] = useState([]);
   // const [isLoading, setIsLoading] = useState(true);
-  <h2>Here is the latest news........</h2>;
+
   useEffect(() => {
     getArticles("/articles").then((data) => {
       setArticles(data.data.articles);
@@ -22,8 +22,10 @@ const Articles = () => {
       </li>
     );
   });
+
   return (
     <section>
+      <h2>Here is the latest news........</h2>
       <TopicBar />
       <ArticlesContainer>{articleCards}</ArticlesContainer>
     </section>
