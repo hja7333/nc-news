@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import TopicBar from "../components/TopicBar";
+import styles from "../styles/SingleArticle.module.css";
 
 const SingleArticle = () => {
   const { article_id } = useParams();
@@ -18,19 +20,24 @@ const SingleArticle = () => {
   return isLoading ? (
     <p>Loading article</p>
   ) : (
-    <main>
-      {/* <img src={article.img} alt={article.name} /> */}
-
-      <h3>{article.title}</h3>
-      <h2>{article.topic}</h2>
-      <img
-        src={article.article_img_url}
-        alt={`image of ${article.title}`}
-      ></img>
-      <p>{article.body}</p>
-      <p>Author {article.author}</p>
-      <p>posted at {article.created_at}</p>
-      <p>Votes {article.votes}</p>
+    <main className={styles.page}>
+      <article className={styles.article_card}>
+        {" "}
+        <section>
+          <TopicBar />
+        </section>
+        <h2>{article.title}</h2>
+        <h4>{article.topic}</h4>
+        <img
+          className={styles.image}
+          src={article.article_img_url}
+          alt={`image of ${article.title}`}
+        ></img>
+        <p>{article.body}</p>
+        <p>Author {article.author}</p>
+        <p>posted at {article.created_at}</p>
+        <p>Votes {article.votes}</p>
+      </article>
     </main>
   );
 };
