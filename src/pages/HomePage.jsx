@@ -7,11 +7,12 @@ import TopicBar from "../components/TopicBar";
 import styles from "/Users/alhunt/northcoders/frontend/nc-news/src/styles/ArticleContainer.module.css";
 const Articles = () => {
   const [articles, setArticles] = useState([]);
-  // const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    getArticles("/articles").then((data) => {
+    getArticles().then((data) => {
       setArticles(data.data.articles);
+      setIsLoading(false);
     });
   }, []);
 

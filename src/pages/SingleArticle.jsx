@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Comments from "../components/Comments";
 import TopicBar from "../components/TopicBar";
 import styles from "../styles/SingleArticle.module.css";
 
@@ -31,12 +32,15 @@ const SingleArticle = () => {
         <img
           className={styles.image}
           src={article.article_img_url}
-          alt={`image of ${article.title}`}
+          alt={`${article.title}`}
         ></img>
         <p>{article.body}</p>
         <p>Author {article.author}</p>
         <p>posted at {article.created_at}</p>
         <p>Votes {article.votes}</p>
+        <section>
+          <Comments />
+        </section>
       </article>
     </main>
   );
