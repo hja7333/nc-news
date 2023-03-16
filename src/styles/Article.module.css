@@ -1,18 +1,11 @@
 .article_card {
+  background-color: #80b9f7;
   border: 5px plum solid;
-  border-radius: 50px;
-  height: 600px;
-  width: 600px;
+  border-radius: 20px;
+  height: 30%;
+  width: 40%;
   margin-left: 50px;
   padding: 30px;
-  list-style-type: none;
-}
-.title {
-  color: rgb(39, 36, 36);
-  margin: 10px;
-  font-size: 2rem;
-}
-.article_img {
-  height: 50%;
-  border: 10px;
+  display: flex;
+  flex-direction: column;
 }

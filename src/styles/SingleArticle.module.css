@@ -1,0 +1,17 @@
+.article_card {
+  background-color: #80b9f7;
+  border: 5px plum solid;
+  border-radius: 50px;
+  height: 85%;
+  width: 85%;
+  margin-left: 50px;
+  padding: 20px;
+  text-align: justify;
+}
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 50%;
+}

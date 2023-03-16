@@ -1,12 +1,12 @@
 .categories {
   display: flex;
   gap: 1rem;
-  padding: 20px;
+  padding: 2px;
   list-style-type: none;
 }
 
 .link {
-  color: purple;
+  color: whitesmoke;
   text-decoration: none;
   padding: 0.1rem 0.5rem;
 }
