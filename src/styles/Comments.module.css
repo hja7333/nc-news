@@ -1,0 +1,9 @@
+.commentCards {
+  background-color: #80b9f7;
+  border: 4px plum solid;
+  border-radius: 7px;
+  font-size: 1.6vw;
+  text-align: left;
+  list-style-type: none;
+  margin: 10px;
+}

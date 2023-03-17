@@ -2,7 +2,6 @@
   display: flex;
   gap: 1rem;
   padding: 2px;
-  list-style-type: none;
 }
 
 .link {
@@ -28,4 +27,5 @@
 .filterBy {
   margin: 0;
   font-weight: bold;
+  color: white;
 }
