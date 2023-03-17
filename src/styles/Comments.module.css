@@ -1,10 +1,9 @@
 .commentCards {
   background-color: #80b9f7;
-  border: 5px plum solid;
-  border-radius: 50px;
-  height: 85%;
-  width: 85%;
-  margin-left: 30px;
-  padding: 20px;
-  text-align: center;
+  border: 4px plum solid;
+  border-radius: 7px;
+  font-size: 1.6vw;
+  text-align: left;
+  list-style-type: none;
+  margin: 10px;
 }

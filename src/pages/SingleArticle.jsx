@@ -34,7 +34,7 @@ const SingleArticle = () => {
           src={article.article_img_url}
           alt={`${article.title}`}
         ></img>
-        <p>{article.body}</p>
+        <p className={styles.body}>{article.body}</p>
         <p>Author {article.author}</p>
         <p>posted at {article.created_at}</p>
         <p>Votes {article.votes}</p>
