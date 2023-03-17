@@ -4,7 +4,7 @@ import Article from "../components/Article";
 import ArticlesContainer from "../components/ArticlesContainer";
 import { getArticles } from "../utils/api";
 import TopicBar from "../components/TopicBar";
-import styles from "/Users/alhunt/northcoders/frontend/nc-news/src/styles/ArticleContainer.module.css";
+import styles from "../styles/ArticleContainer.module.css";
 const Articles = () => {
   const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
