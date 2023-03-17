@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getComments } from "../utils/api";
 import styles from "../styles/Comments.module.css";
+import CommentAdder from "./CommentAdder";
 
 const Comments = () => {
   const [comments, setComments] = useState([]);
@@ -17,6 +18,7 @@ const Comments = () => {
   return (
     <section>
       <h2>Comments</h2>
+      <CommentAdder />
       {comments.map((comment) => {
         return (
           <li key={comment.comment_id} className={styles.commentCards}>

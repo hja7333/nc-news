@@ -19,3 +19,11 @@ export const getComments = (article_id) => {
     return data;
   });
 };
+
+export const postComment = (article_id, newComment) => {
+  return newsApi
+    .post(`/articles/${article_id}/comments`, { body: newComment })
+    .then(({ commentFromApi }) => {
+      console.log(commentFromApi);
+    });
+};
