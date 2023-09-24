@@ -6,7 +6,7 @@ import styles from "../styles/Comments.module.css";
 const Comments = () => {
   const [comments, setComments] = useState([]);
   const { article_id } = useParams();
-  const [isLoading, setIsLoading] = useState(true);
+  const [setIsLoading] = useState(true);
 
   useEffect(() => {
     getComments(article_id).then((data) => {

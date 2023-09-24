@@ -11,7 +11,7 @@ const Article = ({ data }) => {
         <img
           className={styles.article_img}
           src={article_img_url}
-          alt={`image of ${title}`}
+          alt={title}
         ></img>
         <p>Author {data.author}</p>
         <p>posted at {data.created_at}</p>
