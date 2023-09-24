@@ -7,13 +7,12 @@ const Comments = () => {
   const [comments, setComments] = useState([]);
   const { article_id } = useParams();
   const [setIsLoading] = useState(true);
-
   useEffect(() => {
     getComments(article_id).then((data) => {
       setComments(data.comments);
       setIsLoading(false);
     });
-  }, [article_id]);
+  }, [article_id, setIsLoading]);
   return (
     <section>
       <h2>Comments</h2>
