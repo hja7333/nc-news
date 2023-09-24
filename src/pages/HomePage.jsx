@@ -12,7 +12,7 @@ const Articles = () => {
   useEffect(() => {
     getArticles().then((data) => {
       setArticles(data.data.articles);
-      setIsLoading(false);
+      // setIsLoading(false);
     });
   }, []);
 
