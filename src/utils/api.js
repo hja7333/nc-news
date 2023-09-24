@@ -21,3 +21,8 @@ export const getArticles = () => {
       console.error("Error fetching articles:", error);
     });
 };
+export const getComments = (article_id) => {
+  return newsApi.get(`/articles/${article_id}/comments`).then(({ data }) => {
+    return data;
+  });
+};
