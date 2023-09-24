@@ -1,21 +1,23 @@
 import axios from "axios";
+
 const newsApi = axios.create({
-  baseURL: "https://hjanews.onrender.com/api",
+  baseURL: "https://newsapi.org/v2",
 });
 
-export const getArticles = (url) => {
+const API_KEY = "4ed7d74a37aa40ca869e650935364b25";
+
+export const getArticles = () => {
   return newsApi
-    .get("/articles")
-    .then((data) => {
-      return data;
+    .get("/top-headlines", {
+      params: {
+        country: "uk",
+        apiKey: API_KEY,
+      },
+    })
+    .then((response) => {
+      return response.data.articles;
     })
     .catch((error) => {
-      console.log(error);
+      console.error("Error fetching articles:", error);
     });
-};
-
-export const getComments = (article_id) => {
-  return newsApi.get(`/articles/${article_id}/comments`).then(({ data }) => {
-    return data;
-  });
 };
