@@ -5,7 +5,7 @@
 }
 
 .link {
-  color: whitesmoke;
+  color: #ea4335;
   text-decoration: none;
   padding: 0.1rem 0.5rem;
 }
@@ -17,7 +17,7 @@
 }
 
 .active {
-  color: white;
+  color: #ea4335;
   text-decoration: none;
   border: 1px #4285f4 solid;
   padding: 0.3rem 0.5rem;
@@ -27,5 +27,5 @@
 .filterBy {
   margin: 0;
   font-weight: bold;
-  color: white;
+  color: #ea4335;
 }
