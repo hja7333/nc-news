@@ -28,7 +28,7 @@ const Articles = () => {
     <section>
       <TopicBar />
       <br></br>
-      <h2 className={styles.headline}>Here is the latest news........</h2>
+      {/* <h2 className={styles.headline}>Here is the latest news........</h2> */}
 
       <ArticlesContainer>{articleCards}</ArticlesContainer>
     </section>
