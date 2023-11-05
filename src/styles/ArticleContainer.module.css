@@ -1,7 +1,6 @@
 .container {
   width: 70%;
   height: 50%;
-
   flex-direction: row;
   gap: 5rem;
 }
